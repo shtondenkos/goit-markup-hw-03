@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="conteiner">
-      <nav>
+    <header class="header-box">
+      <div class="conteiner  header-conteiner">
+      <nav class="header-nav">
         <a href="./index.html" class="logo"
           >Web<span class="logo-header">Studio</span></a
         >
@@ -29,7 +30,6 @@
           <li><a href="#" class="link">Контакти</a></li>
         </ul>
       </nav>
-      <address>
         <ul class="address">
           <li>
             <a class="mail"  href="mailto:info@devstudio.com" lang="en"
@@ -40,10 +40,11 @@
             <a class="tel"  href="tel:+380961111111" >+38 096 111 11 11</a>
           </li>
         </ul>
-      </address>
+      </div>
     </header>
     <main>
       <section class="rows">
+        <div class="conteiner">
         <h1 class="visually-hidden">портфоліо</h1>
         <ul class="buttons">
           <li><button class="btn" type="button">Усі</button></li>
@@ -52,79 +53,134 @@
           <li><button class="btn" type="button">Дизайн</button></li>
           <li><button class="btn" type="button">Маркетинг</button></li>
         </ul>
-        <ul>
-          <li>
+        <ul class="card-set" >
+          <li class="item">
+            <article class="card">
+              <div class="card-thumb">
           <a class="atitle" href="">
             <img src="./images/1.1.jpg" alt="Технокряк" width="370" />
+              </div>
+              <div class="card-content">
             <h2 class="title">Технокряк</h2>
             <p class="subtitle">Веб-сайт</p>
+            </div>
           </a>
+          </article>
           </li>
-          <li>
+          <li class="item">
+            <article class="card">
+              <div class="card-thumb">
             <a class="atitle" href="">
             <img src="./images/1.2.jpg" alt="Баскетболісти" width="370" />
+            </div>
+            <div class="card-content">
             <h2 class="title">Постер New Orlean vs Golden Star</h2>
             <p class="subtitle">Дизайн</p>
+            </div>
             </a>
+            </article>
           </li>
-          <li>
+          <li class="item">
+            <article class="card">
+              <div class="card-thumb">
             <a class="atitle" href="">
             <img src="./images/1.3.jpg" alt="Ресторан" width="370" />
+            </div>
+            <div class="card-content">
             <h2 class="title">Ресторан Seafood</h2>
             <p class="subtitle">Додаток</p>
+            </div>
             </a>
+            </article>
           </li>
-          <li>
+          <li class="item">
+            <article class="card">
+            <div class="card-thumb">
             <a class="atitle" href="">
             <img src="./images/2.1.jpg" alt="Навушники" width="370" />
+            </div>
+            <div class="card-content">
             <h2 class="title">Проєкт Prime</h2>
             <p class="subtitle">Маркетинг</p>
+            </div> 
             </a>
+            </article>
           </li>
-          <li>
+          <li class="item">
+            <article class="card">
+            <div class="card-thumb">
             <a class="atitle" href="">
             <img src="./images/2.2.jpg" alt="Дві коробки" width="370" />
+            </div>
+            <div class="card-content">
             <h2 class="title">Проєкт Boxes</h2>
             <p class="subtitle">Додаток</p>
+            </div>
             </a>
+            </article>
           </li>
-          <li>
+          <li class="item">
+            <article class="card">
+            <div class="card-thumb">
             <a class="atitle" href="">
             <img src="./images/2.3.jpg" alt="Веб-сайт" width="370" />
+            </div>
+            <div class="card-content">
             <h2 class="title">Inspiration has no Borders</h2>
             <p class="subtitle">Веб-сайт</p>
+            </div>
             </a>
           </li>
-          <li>
+          <li class="item">
+            <article class="card">
+            <div class="card-thumb">
             <a class="atitle" href="">
             <img src="./images/3.1.jpg" alt="Розгорнута книга" width="370" />
+            </div>
+            <div class="card-content">
             <h2 class="title">Видання Limited Edition</h2>
             <p class="subtitle">Дизайн</p>
+            </div>
             </a>
+            </article>
           </li>
-          <li>
+          <li class="item">
+            <article class="card">
+            <div class="card-thumb">
             <a class="atitle" href="">
             <img src="./images/3.2.jpg" alt="Бейдж" width="370" />
+            </div>
+            <div class="card-content">
             <h2 class="title">Проєкт LAB</h2>
             <p class="subtitle">Маркетинг</p>
+            </div>
             </a>
+            </article>
           </li>
-          <li>
+          <li class="item">
+            <article class="card">
+            <div class="card-thumb">
             <a class="atitle" href="">
             <img src="./images/3.3.jpg" alt="Руки розробника" width="370" />
+            </div>
+            <div class="card-content">
             <h2 class="title">Growing Business</h2>
             <p class="subtitle">Додаток</p>
+            </div>
             </a>
+            </article>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <footer class="foot">
+      <div class="conteiner">
       <a href="./index.html" class="logo"
         >Web<span class="logo-footer">Studio</span></a
       >
 
-      <address>
+      <address class="mainadd">
         <a class="foot-address"
           href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
           target="_blank"
@@ -134,6 +190,7 @@
         <a class="foot-mail" href="mailto:info@devstudio.com" lang="en">info@devstudio.com</a>
         <a class="foot-tel" href="tel:+380961111111">+38 096 111 11 11</a>
       </address>
+      </div>
     </footer>
   </body>
 </html>

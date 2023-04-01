@@ -1,5 +1,6 @@
 :root {
     --color-body: #ffff;
+    --color-borders-card: #EEEEEE;
     --color-primery: #212121;
     --color-secondary: #757575;
     --color-brand: #000000;
@@ -11,6 +12,7 @@
     --color-buttons: #212121;
     --color-buttons-background: #F5F4FA;
     --color-footer-background: #2F303A;
+    --card-set-gap: 30px;
 }
 
 body {
@@ -38,6 +40,8 @@ p {
     font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
     color: var(--color-primery);
 }
@@ -172,12 +176,18 @@ p {
     font-family: Roboto, sans-serif;
     list-style: none;
     text-decoration: none;
+    border-radius: 4px;
     color: var(--color-buttons);
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
     display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 94px;
+    margin-bottom: 50px;
+    gap: 8px;
 
 }
 
@@ -194,6 +204,7 @@ p {
     border-radius: 4px;
     border-width: none;
     justify-content: center;
+    box-shadow: none;
 
 }
 
@@ -226,6 +237,7 @@ p {
     cursor: pointer;
     border-radius: 4px;
     border: none;
+    box-shadow: none;
     letter-spacing: 0.06em;
     color: #FFFFFF;
 }
@@ -238,13 +250,11 @@ p {
 
 .feature li,
 .atitle {
-    text-decoration: none;
     width: 270px;
-    padding-top: 94px;
     padding-left: 0;
+    text-decoration: none;
 }
 
-.imeges {}
 
 .title {
     font-size: 18px;
@@ -252,6 +262,8 @@ p {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--color-primery);
+    margin-top: 20px;
+
 }
 
 .subtitle {
@@ -260,20 +272,30 @@ p {
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--color-secondary);
+    margin-top: 4px;
+
 }
 
 .foot {
     background-color: var(--color-footer-background);
+    padding-top: 60px;
 }
 
 .foot-address {
     font-size: 14px;
     font-style: normal;
     text-decoration: none;
+    padding-bottom: 12px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--color-withlight);
 
+}
+.mainadd {
+    display: flex;
+    flex-direction: column;
+    padding-top: 48px;
+    padding-bottom: 60px;
 }
 
 .foot-mail,
@@ -282,6 +304,7 @@ p {
     font-style: normal;
     text-decoration: none;
     line-height: 1.71;
+    padding-bottom: 12px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -293,10 +316,14 @@ p {
     color: var(--color-primery);
     margin-bottom: 10px;
 }
+.main-subject{
+    padding-top: 94px;
+}
 
 .feature {
     display: flex;
     gap: 30px;
+    padding-left: 0;
 }
 
 .text {
@@ -319,6 +346,7 @@ p {
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
     text-align: center;
     color: var(--color-primery);
 }
@@ -326,7 +354,7 @@ p {
 .ourteam {
     background-color: var(--color-buttons-background);
     display: flex;
-    padding: 120px 0;
+    padding: 94px 0;
 
 }
 
@@ -334,11 +362,17 @@ p {
     display: flex;
     gap: 30px;
     justify-content: center;
+    padding-left: 0;
+}
+.cardtitle {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team-foto {
     flex-basis: calc((100% - 3 * 30px)/4);
     border-radius: 0px 0px 4px 4px;
+    display: block;
 }
 
 .name {
@@ -346,6 +380,7 @@ p {
     font-weight: 500;
     line-height: 1.18;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
     text-align: center;
     color: var(--color-primery);
 }
@@ -388,5 +423,31 @@ p {
 .header-nav {
     display: flex;
     align-items: center;
-    gap: 93px;
+}
+.card {
+ 
+}
+.card-set {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--card-set-gap));
+    margin-top: calc(-1 * var(--card-set-gap));
+}
+.card-set > .item {
+    flex-basis: calc(100%/3-var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.item {
+    border: 1px solid var(--color-borders-card);
+}
+.card-content {
+    padding: 24px 20px;
 }
