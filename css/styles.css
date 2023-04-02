@@ -35,6 +35,7 @@ p {
 }
 
 .link {
+    display: block;
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -96,10 +97,11 @@ p {
     text-align: center;
     color: var(--color-withlight);
     background-color: var(--color-footer-background);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4)),(rgba(47, 48, 58, 0.4)), url(../images/Header\ Img\ copy.jpg);
 }
 
 .header-box {
-    border-bottom: 1px var(--color-border);
+    border-bottom: 1px  solid var(--color-border);
 }
 
 .hero-title {
@@ -153,7 +155,7 @@ p {
     margin-left: auto;
     padding-left: 0;
     text-align: center;
-    gap: 40px;
+    gap: 50px;
 }
 
 .address a:hover,
@@ -177,6 +179,7 @@ p {
     list-style: none;
     text-decoration: none;
     border-radius: 4px;
+    padding-left: 0;
     color: var(--color-buttons);
     font-size: 16px;
     line-height: 1.62;
@@ -185,7 +188,6 @@ p {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin-top: 94px;
     margin-bottom: 50px;
     gap: 8px;
 
@@ -199,6 +201,7 @@ p {
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
+    padding: 6px 22px;
     text-align: center;
     background-color: var(--color-buttons-background);
     border-radius: 4px;
@@ -220,7 +223,6 @@ p {
 .hero-btn {
     font-size: 16px;
     padding: 8.97px 24px;
-    margin-top: 30px;
     line-height: calc(30/16);
     background-color: #2196F3;
     text-align: center;
@@ -254,6 +256,28 @@ p {
     padding-left: 0;
     text-decoration: none;
 }
+.box-items {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+.list-item {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color:#F5F4FA;
+    border-radius: 4px;
+
+}
+.list-item::before {
+    display: block;
+    content: "";
+    height: 70px;
+    background-image: url(../images/Group.svg);
+    background-size: contain;
+    background-position: center;
+}
 
 
 .title {
@@ -279,32 +303,31 @@ p {
 .foot {
     background-color: var(--color-footer-background);
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .foot-address {
+    display: block;
     font-size: 14px;
     font-style: normal;
     text-decoration: none;
-    padding-bottom: 12px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--color-withlight);
 
 }
 .mainadd {
-    display: flex;
-    flex-direction: column;
-    padding-top: 48px;
-    padding-bottom: 60px;
+    margin-top: 20px;
 }
 
 .foot-mail,
 .foot-tel {
+    display: block;
     font-size: 14px;
     font-style: normal;
     text-decoration: none;
     line-height: 1.71;
-    padding-bottom: 12px;
+    margin-top: 12px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -393,8 +416,10 @@ p {
     color: var(--color-secondary);
 }
 
-.section {
-    padding: 94px 0;
+
+.rows {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .image-about {
@@ -446,7 +471,6 @@ img {
     height: auto;
 }
 .item {
-    border: 1px solid var(--color-borders-card);
 }
 .card-content {
     padding: 24px 20px;
