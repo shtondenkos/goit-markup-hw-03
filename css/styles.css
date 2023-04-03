@@ -286,7 +286,6 @@ p {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--color-primery);
-    margin-top: 20px;
 
 }
 
@@ -362,6 +361,7 @@ p {
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--color-primery);
+    padding-top: 94px;
     margin-bottom: 50px;
 }
 
