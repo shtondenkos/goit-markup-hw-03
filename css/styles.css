@@ -270,14 +270,6 @@ p {
     border-radius: 4px;
 
 }
-.list-item::before {
-    display: block;
-    content: "";
-    height: 70px;
-    background-image: url(../images/Group.svg);
-    background-size: contain;
-    background-position: center;
-}
 
 
 .title {
@@ -449,9 +441,8 @@ p {
     display: flex;
     align-items: center;
 }
-.card {
  
-}
+
 .card-set {
     padding: 0;
     margin: 0;
@@ -470,8 +461,21 @@ img {
     max-width: 100%;
     height: auto;
 }
-.item {
-}
+
 .card-content {
     padding: 24px 20px;
+}
+
+.list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.sprite-item {
+    width: 65.32px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
