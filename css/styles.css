@@ -479,3 +479,40 @@ img {
     margin-right: auto;
 
 }
+.sprite-item-letter {
+        width: 16px;
+        height: 12px;
+        margin-left: auto;
+        margin-right: auto;
+}
+.sprite-item-smartphone {
+        width: 10px;
+        height: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+.sprite-header {
+    display: inline-block;
+    padding-right: 10px;
+    fill: #757575;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.sprite-item-letter:hover,
+.sprite-item-smartphone:hover {
+    fill:#2196F3
+}
+.sprite-item-teamcard {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    fill:#757575;
+
+}
+.thumb-sprite {
+    width: 44px;
+    height: 44px;
+    background-color: #2196F3;
+    border-radius: 50%;
+}
