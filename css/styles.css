@@ -97,7 +97,7 @@ p {
     text-align: center;
     color: var(--color-withlight);
     background-color: var(--color-footer-background);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4)),(rgba(47, 48, 58, 0.4)), url(../images/Header\ Img\ copy.jpg);
+    background-image: url(../images/Header\ Img\ copy.jpg);
 }
 
 .header-box {
@@ -543,3 +543,39 @@ img {
     gap: 10px;
 
 }
+.list-item-logo {
+    display: flex;
+    width: 170px;
+    height: 72px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+.sprite-item-logo {
+    width: 106px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.our-clients {
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    text-align: center;
+    color: var(--color-primery);
+    }
+    .clients {
+        display: flex;
+        gap: 30px;
+    }
+    .sociable-title {
+        display: flex;
+        align-items: center;
+        color: #EEEEEE;
+    }
+    .foot > .conteiner {
+        display: flex;
+        align-items: center;
+    }
