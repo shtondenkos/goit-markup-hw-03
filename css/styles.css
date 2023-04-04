@@ -256,12 +256,8 @@ p {
     padding-left: 0;
     text-decoration: none;
 }
-.box-items {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding-bottom: 30px;
-}
+
+
 .list-item {
     display: flex;
     width: 270px;
@@ -328,6 +324,7 @@ p {
     line-height: 1.21;
     letter-spacing: 0.03em;
     color: var(--color-primery);
+    padding-top: 30px;
     margin-bottom: 10px;
 }
 .main-subject{
@@ -353,8 +350,11 @@ p {
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--color-primery);
-    padding-top: 94px;
     margin-bottom: 50px;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .team {
@@ -380,8 +380,14 @@ p {
     padding-left: 0;
 }
 .cardtitle {
+    background-color: #FFFFFF;
     padding-top: 30px;
     padding-bottom: 30px;
+    box-shadow: 0px 2px 1px 0px #00000033;
+    box-shadow: 0px 1px 1px 0px #00000024;
+    box-shadow: 0px 1px 3px 0px #0000001F;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 
 .team-foto {
@@ -464,6 +470,9 @@ img {
 
 .card-content {
     padding: 24px 20px;
+    border-left: 1px solid var(--color-borders-card);
+    border-right: 1px solid var(--color-borders-card);
+    border-bottom: 1px solid var(--color-borders-card);
 }
 
 .list-item {
@@ -504,15 +513,33 @@ img {
     fill:#2196F3
 }
 .sprite-item-teamcard {
-    display: inline-block;
     width: 20px;
     height: 20px;
     fill:#757575;
-
 }
+.sprite-item-teamcard:hover {
+    width: 20px;
+    height: 20px;
+    fill: #FFFFFF;
+}
+
 .thumb-sprite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
+   
+}
+.thumb-sprite:hover {
     background-color: #2196F3;
     border-radius: 50%;
+}
+.thumb-sociable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 16px;
+    gap: 10px;
+
 }
