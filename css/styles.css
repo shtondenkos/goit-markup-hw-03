@@ -529,6 +529,9 @@ img {
     justify-content: center;
     width: 44px;
     height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-secondary);
+    border-radius: 50%;
    
 }
 .thumb-sprite:hover {
@@ -571,11 +574,15 @@ img {
         gap: 30px;
     }
     .sociable-title {
-        display: flex;
-        align-items: center;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        
         color: #EEEEEE;
     }
     .foot > .conteiner {
         display: flex;
-        align-items: center;
+        align-items: baseline;
+        gap: 70px;
     }
